@@ -1,0 +1,251 @@
+.account-page {
+    margin: auto;
+    max-width: 1000px;
+    min-height: calc(100vh - 160px);
+    padding: 56px 24px 80px;
+}
+
+.account-heading {
+    margin: 0 auto 28px;
+    max-width: 720px;
+    text-align: center;
+}
+
+.account-heading h2 {
+    color: var(--dark);
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 42px;
+    margin-bottom: 12px;
+}
+
+.account-heading p,
+.account-panel > p,
+.profile-heading p {
+    color: #5a4038;
+    line-height: 1.65;
+}
+
+.storage-notice {
+    background: #fff4dd;
+    border-left: 4px solid #c78936;
+    color: #68491f;
+    line-height: 1.6;
+    margin: 0 auto 24px;
+    max-width: 860px;
+    padding: 14px 18px;
+}
+
+.account-forms {
+    display: grid;
+    gap: 24px;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.account-panel {
+    background: #fff;
+    border: 1px solid #efdfd6;
+    border-radius: 8px;
+    box-shadow: var(--shadow);
+    padding: 28px;
+}
+
+.account-panel h3 {
+    color: var(--brown);
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.account-form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.account-form label {
+    color: #4d3a33;
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    font-weight: 600;
+    gap: 7px;
+}
+
+.account-form input {
+    background: #fffdfb;
+    border: 1px solid #e6d2c4;
+    border-radius: 6px;
+    min-height: 46px;
+    padding: 10px 12px;
+    width: 100%;
+}
+
+.account-form input:focus {
+    border-color: #c88d70;
+    outline: 3px solid #5a2d2220;
+}
+
+.account-form button,
+.secondary-button {
+    background: var(--brown);
+    border: 0;
+    border-radius: 6px;
+    color: #fff;
+    cursor: pointer;
+    font-weight: 700;
+    min-height: 46px;
+    padding: 10px 18px;
+}
+
+.account-form button:hover,
+.secondary-button:hover {
+    background: #e89b6c;
+}
+
+.account-page .form-message {
+    margin: 0 auto 20px;
+    max-width: 860px;
+}
+
+.account-page [hidden] {
+    display: none !important;
+}
+
+.profile-panel,
+.admin-dashboard {
+    margin-top: 24px;
+}
+
+.profile-heading {
+    align-items: center;
+    border-bottom: 1px solid #efdfd6;
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    padding-bottom: 22px;
+}
+
+.profile-heading .tag {
+    margin-bottom: 10px;
+}
+
+.profile-heading h3 {
+    margin: 0 0 5px;
+}
+
+.profile-heading p {
+    margin: 0;
+}
+
+.secondary-button {
+    flex: 0 0 auto;
+}
+
+.order-history-title {
+    margin: 24px 0 14px !important;
+}
+
+.orders-list {
+    display: grid;
+    gap: 14px;
+}
+
+.saved-order {
+    background: #fffaf7;
+    border: 1px solid #efdfd6;
+    border-radius: 6px;
+    padding: 18px;
+}
+
+.saved-order-heading {
+    align-items: baseline;
+    display: flex;
+    gap: 16px;
+    justify-content: space-between;
+}
+
+.saved-order-heading h3 {
+    font-family: Arial, sans-serif;
+    font-size: 17px;
+    margin: 0;
+}
+
+.saved-order-heading strong {
+    color: var(--brown);
+    font-size: 18px;
+    white-space: nowrap;
+}
+
+.saved-order p,
+.saved-order li {
+    color: #5a4038;
+    line-height: 1.55;
+    overflow-wrap: anywhere;
+}
+
+.saved-order p {
+    margin: 8px 0 0;
+}
+
+.saved-order .order-customer {
+    font-weight: 700;
+}
+
+.order-inspiration {
+    border-radius: 6px;
+    display: block;
+    margin-top: 12px;
+    max-height: 240px;
+    max-width: min(100%, 360px);
+    object-fit: contain;
+}
+
+.saved-order ul {
+    margin: 10px 0 0;
+    padding-left: 20px;
+}
+
+.empty-orders {
+    color: #75645b;
+    padding: 8px 0;
+}
+
+.admin-auth-panel {
+    margin: auto;
+    max-width: 500px;
+}
+
+.admin-auth-panel .account-form h3 {
+    margin-bottom: 0;
+}
+
+.admin-auth-panel .account-form p {
+    color: #5a4038;
+    line-height: 1.6;
+}
+
+.admin-dashboard {
+    margin-top: 24px;
+}
+
+@media (max-width: 680px) {
+    .account-page {
+        padding: 42px 18px 60px;
+    }
+
+    .account-heading h2 {
+        font-size: 34px;
+    }
+
+    .account-forms {
+        grid-template-columns: 1fr;
+    }
+
+    .account-panel {
+        padding: 22px;
+    }
+
+    .profile-heading {
+        align-items: flex-start;
+    }
+}

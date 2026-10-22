@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Owner Orders | Sweet Crumbs Bakery</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="account.css">
+</head>
+<body>
+    <header>
+        <h1>Sweet Crumbs</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="menu.html">Menu</a>
+            <a href="cart.html">Cart</a>
+            <a href="contact.html">Contact</a>
+            <a href="account.html">Profile</a>
+            <a href="admin.html">Owner</a>
+        </nav>
+    </header>
+
+    <main class="account-page admin-page" id="adminPage">
+        <div class="account-heading">
+            <span class="tag">Bakery owner</span>
+            <h2>Order dashboard</h2>
+            <p>Sign in to review customer orders saved in this browser.</p>
+        </div>
+        <p class="storage-notice">Owner passcode and orders are stored in this browser.</p>
+        <div id="adminMessage" class="form-message" role="status" aria-live="polite"></div>
+
+        <section class="account-panel admin-auth-panel">
+            <form id="adminSetupForm" class="account-form" hidden>
+                <h3>Set up owner access</h3>
+                <p>Create an owner passcode for this browser.</p>
+                <label>Owner passcode<input type="password" name="password" autocomplete="new-password" minlength="10" required></label>
+                <button type="submit">Set owner passcode</button>
+            </form>
+            <form id="adminLoginForm" class="account-form" hidden>
+                <h3>Owner sign in</h3>
+                <label>Owner passcode<input type="password" name="password" autocomplete="current-password" required></label>
+                <button type="submit">View orders</button>
+            </form>
+        </section>
+
+        <section class="account-panel admin-dashboard" id="adminDashboard" hidden>
+            <div class="profile-heading">
+                <div>
+                    <span class="tag">All customers</span>
+                    <h3><span id="adminOrderCount">0</span> orders</h3>
+                </div>
+            </div>
+            <div id="adminOrders" class="orders-list"></div>
+        </section>
+    </main>
+
+    <footer><p>© 2026 Sweet Crumbs Bakery | Online Bakery Ordering System</p></footer>
+    <script src="script.js"></script>
+    <script src="account.js"></script>
+</body>
+</html>

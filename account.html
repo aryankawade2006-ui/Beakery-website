@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Your Profile | Sweet Crumbs Bakery</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="account.css">
+</head>
+<body>
+    <header>
+        <h1>Sweet Crumbs</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="menu.html">Menu</a>
+            <a href="cart.html">Cart</a>
+            <a href="contact.html">Contact</a>
+            <a href="account.html">Profile</a>
+            <a href="admin.html">Owner</a>
+        </nav>
+    </header>
+
+    <main class="account-page" id="accountPage">
+        <div class="account-heading">
+            <span class="tag">Sweet Crumbs account</span>
+            <h2>Your profile &amp; orders</h2>
+            <p>Sign in to see your order history, or create a profile before checkout.</p>
+        </div>
+
+        <p class="storage-notice">Accounts and orders are saved in this browser.</p>
+        <div id="accountMessage" class="form-message" role="status" aria-live="polite"></div>
+
+        <div class="account-forms" id="accountForms">
+            <section class="account-panel">
+                <h3>Sign in</h3>
+                <form id="signInForm" class="account-form">
+                    <label>Email<input type="email" name="email" autocomplete="email" required></label>
+                    <label>Password<input type="password" name="password" autocomplete="current-password" required></label>
+                    <button type="submit">Sign in</button>
+                </form>
+            </section>
+            <section class="account-panel">
+                <h3>Create profile</h3>
+                <form id="registerForm" class="account-form">
+                    <label>Name<input type="text" name="name" autocomplete="name" minlength="2" required></label>
+                    <label>Email<input type="email" name="email" autocomplete="email" required></label>
+                    <label>Password<input type="password" name="password" autocomplete="new-password" minlength="8" required></label>
+                    <button type="submit">Create profile</button>
+                </form>
+            </section>
+        </div>
+
+        <section class="account-panel profile-panel" id="signedInPanel" hidden>
+            <div class="profile-heading">
+                <div>
+                    <span class="tag">Your account</span>
+                    <h3 id="profileName"></h3>
+                    <p id="profileEmail"></p>
+                </div>
+                <button class="secondary-button" id="signOutButton" type="button">Sign out</button>
+            </div>
+            <h3 class="order-history-title">Your orders</h3>
+            <div id="profileOrders" class="orders-list"></div>
+        </section>
+    </main>
+
+    <footer><p>© 2026 Sweet Crumbs Bakery | Online Bakery Ordering System</p></footer>
+    <script src="script.js"></script>
+    <script src="account.js"></script>
+</body>
+</html>

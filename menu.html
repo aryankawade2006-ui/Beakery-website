@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Menu | Sweet Crumbs Bakery</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="menu.css">
+</head>
+
+<body>
+    <header>
+        <h1>Sweet Crumbs</h1>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="menu.html">Menu</a>
+            <a href="cart.html">Cart</a>
+            <a href="contact.html">Contact</a>
+            <a href="account.html">Profile</a>
+            <a href="admin.html">Owner</a>
+        </nav>
+    </header>
+
+    <main class="menu-page">
+        <section class="menu-hero">
+            <h2>Our Bakery Menu</h2>
+            <p>Freshly baked favorites made every morning with premium ingredients.</p>
+        </section>
+
+        <div class="menu-categories">
+            <section class="menu-category" aria-labelledby="cakes-heading">
+                <div class="category-heading">
+                    <span class="tag">Our Bestseller</span>
+                    <h2 id="cakes-heading">Cookies</h2>
+                    <p>Chewy, chocolatey comfort.</p>
+                </div>
+                <div class="flavour-grid">
+                    <article class="flavour-card">
+                        <img src="https://images.unsplash.com/photo-1558961363-fa8fdf82db35?auto=format&fit=crop&w=900&q=80" alt="Chocolate chip cookie">
+                        <div class="flavour-copy">
+                            <h3>chocolate chip <span class="diet-tag" data-veg-label="🟢 Veg" data-nonveg-label="🔴 Non-Veg">🟢 Veg</span></h3>
+                            <p>bittersweet chocolate chunks &amp; chips, topped with flaky salt</p>
+                            <div class="product-choice"><label for="egg-monthly-choc-chip">Egg option</label><select id="egg-monthly-choc-chip" class="egg-option"><option value="100% Eggless">100% Eggless</option><option value="With Egg">With Egg</option></select></div>
+                            <div class="product-actions"><strong class="product-price">₹120</strong><button class="add-to-cart" data-name="Chocolate Chip" data-price="120" data-image="https://images.unsplash.com/photo-1499636136210-6f4ee915583e?auto=format&amp;fit=crop&amp;w=900&amp;q=80">Add to Cart</button></div>
+                        </div>
+                    </article>
+                    <article class="flavour-card">
+                        <img src="https://fantabulosity.com/wp-content/uploads/2021/06/Marshmallow-Cookies-with-Sprinkles-18-1015x1536.jpg?auto=format&fit=crop&w=900&q=80" alt="Lucky charms cookie">
+                        <div class="flavour-copy">
+                            <h3>lucky charms <span class="diet-tag" data-veg-label="🟢 Veg" data-nonveg-label="🔴 Non-Veg">🟢 Veg</span></h3>
+                            <p>marshmallows straight from the cereal box, in a birthday cake dough</p>
+                            <div class="product-choice"><label for="egg-monthly-lucky">Egg option</label><select id="egg-monthly-lucky" class="egg-option"><option value="100% Eggless">100% Eggless</option><option value="With Egg">With Egg</option></select></div>
+                            <div class="product-actions"><strong class="product-price">₹130</strong><button class="add-to-cart" data-name="Lucky Charms" data-price="130" data-image="https://fantabulosity.com/wp-content/uploads/2021/06/Marshmallow-Cookies-with-Sprinkles-18-1015x1536.jpg?auto=format&amp;fit=crop&amp;w=900&amp;q=80">Add to Cart</button></div>
+                        </div>
+                    </article>
+                    <article class="flavour-card">
+                        <img src="darkmarshmello.jpg" alt="Rocky road chocolate treat">
+                        <div class="flavour-copy">
+                            <h3>rocky road <span class="diet-tag" data-veg-label="🟢 Veg" data-nonveg-label="🔴 Non-Veg">🟢 Veg</span></h3>
+                            <p>dark chocolate, marshmallows, roasted pecans &amp; toffee bits</p>
+                            <div class="product-choice"><label for="egg-monthly-rocky-road">Egg option</label><select id="egg-monthly-rocky-road" class="egg-option"><option value="100% Eggless">100% Eggless</option><option value="With Egg">With Egg</option></select></div>
+                            <div class="product-actions"><strong class="product-price">₹140</strong><button class="add-to-cart" data-name="Rocky Road" data-price="140" data-image="darkmarshmello.jpg?auto=format&amp;fit=crop&amp;w=900&amp;q=80">Add to Cart</button></div>
+                        </div>
+                    </article>
+                    <article class="flavour-card">
+                        <img src="gingerbread.jpg" alt="Ginger molasses cookie">
+                        <div class="flavour-copy">
+                            <h3>gingerdoodle <span class="diet-tag" data-veg-label="🟢 Veg" data-nonveg-label="🔴 Non-Veg">🟢 Veg</span></h3>
+                            <p>ginger molasses meet snickerdoodle</p>
+                            <div class="product-choice"><label for="egg-monthly-gingerdoodle">Egg option</label><select id="egg-monthly-gingerdoodle" class="egg-option"><option value="100% Eggless">100% Eggless</option><option value="With Egg">With Egg</option></select></div>
+                            <div class="product-actions"><strong class="product-price">₹120</strong><button class="add-to-cart" data-name="Gingerdoodle" data-price="120" data-image="gingerbread.jpg?auto=format&amp;fit=crop&amp;w=900&amp;q=80">Add to Cart</button></div>
+                        </div>
+                    </article>
+                    <article class="flavour-card">
+                        <img src="brookie.jpg" alt="Brownie and chocolate chip cookie">
+                        <div class="flavour-copy">
+                            <h3>brookie <span class="diet-tag" data-veg-label="🟢 Veg" data-nonveg-label="🔴 Non-Veg">🟢 Veg</span></h3>
+                            <p>the one where brownie meets chocolate chip cookie</p>
+                            <div class="product-choice"><label for="egg-monthly-brookie">Egg option</label><select id="egg-monthly-brookie" class="egg-option"><option value="100% Eggless">100% Eggless</option><option value="With Egg">With Egg</option></select></div>
+                            <div class="product-actions"><strong class="product-price">₹140</strong><button class="add-to-cart" data-name="Brookie" data-price="140" data-image="brookie.jpg?auto=format&amp;fit=crop&amp;w=900&amp;q=80">Add to Cart</button></div>
+                        </div>
+                    </article>
+                    <article class="flavour-card">
+                        <img src="cornflake.jpg" alt="Cornflake crunch cookie">
+                        <div class="flavour-copy">
+                            <h3>cornflake crunch <span class="diet-tag" data-veg-label="🟢 Veg" data-nonveg-label="🔴 Non-Veg">🟢 Veg</span></h3>
+                            <p>cornmeal dough with swirls of homemade caramel, then rolled in milk-toasted cornflakes</p>
+                            <div class="product-choice"><label for="egg-monthly-cornflake">Egg option</label><select id="egg-monthly-cornflake" class="egg-option"><option value="100% Eggless">100% Eggless</option><option value="With Egg">With Egg</option></select></div>
+                            <div class="product-actions"><strong class="product-price">₹130</strong><button class="add-to-cart" data-name="Cornflake Crunch" data-price="130" data-image="cornflake.jpg?auto=format&amp;fit=crop&amp;w=900&amp;q=80">Add to Cart</button></div>
+                        </div>
+                    </article>
+                    <article class="flavour-card">
+                        <img src="otmealpie.jpg" alt="Apple crisp pastry">
+                        <div class="flavour-copy">
+                            <h3>apple crisp <span class="diet-tag" data-veg-label="🟢 Veg" data-nonveg-label="🔴 Non-Veg">🟢 Veg</span></h3>
+                            <p>spiced oatmeal cookie, stuffed with homemade apple pie filling</p>
+                            <div class="product-choice"><label for="egg-monthly-apple">Egg option</label><select id="egg-monthly-apple" class="egg-option"><option value="100% Eggless">100% Eggless</option><option value="With Egg">With Egg</option></select></div>
+                            <div class="product-actions"><strong class="product-price">₹130</strong><button class="add-to-cart" data-name="Apple Crisp" data-price="130" data-image="otmealpie.jpg?auto=format&amp;fit=crop&amp;w=900&amp;q=80">Add to Cart</button></div>
+                        </div>
+                    </article>
+                    <article class="flavour-card">
+                        <img src="pretzel.jpg" alt="Malted chocolate cookie with pretzels">
+                        <div class="flavour-copy">
+                            <h3>milo malteser <span class="diet-tag" data-veg-label="🟢 Veg" data-nonveg-label="🔴 Non-Veg">🟢 Veg</span></h3>
+                            <p>malted chocolate dough with crushed slated pretzels &amp; maltesers</p>
+                            <div class="product-choice"><label for="egg-monthly-milo">Egg option</label><select id="egg-monthly-milo" class="egg-option"><option value="100% Eggless">100% Eggless</option><option value="With Egg">With Egg</option></select></div>
+                            <div class="product-actions"><strong class="product-price">₹140</strong><button class="add-to-cart" data-name="Milo Malteser" data-price="140" data-image="pretzel.jpg?auto=format&amp;fit=crop&amp;w=900&amp;q=80">Add to Cart</button></div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <div class="menu-categories">
+            <section class="menu-category" aria-labelledby="cakes-heading">
+                <div class="category-heading">
+                    <span class="tag">Celebration favourites</span>
+                    <h2 id="cakes-heading">Cakes</h2>
+                    <p>Classic layers and fresh finishes, baked for sharing.</p>
+                </div>
+                <div class="menu-grid">
+                    <article class="menu-card">
+                        <img src="truffle.webp" alt="Chocolate truffle cake">
+                        <div class="menu-content">
+                            <h3>Chocolate Truffle <span class="diet-tag" data-veg-label="🟢 Veg" data-nonveg-label="🔴 Non-Veg">🟢 Veg</span></h3>
+                            <p>Rich chocolate sponge layered with smooth, glossy ganache.</p>
+                            <div class="product-choice"><label for="egg-truffle">Egg option</label><select id="egg-truffle" class="egg-option"><option value="100% Eggless">100% Eggless</option><option value="With Egg">With Egg</option></select></div>
+                            <div class="product-actions"><strong class="product-price">₹699</strong><button class="add-to-cart" data-name="Chocolate Truffle Cake" data-price="699" data-image="truffle.webp?auto=format&amp;fit=crop&amp;w=900&amp;q=80">Add to Cart</button></div>
+                        </div>
+                    </article>
+                    <article class="menu-card menu-card-enquiry">
+                        <img src="rasmalai.jpg" alt="Rasmalai celebration cake">
+                        <div class="menu-content">
+                            <h3>Rasmalai Cake <span class="diet-tag" data-veg-label="🟢 Veg" data-nonveg-label="🔴 Non-Veg">🟢 Veg</span></h3>
+                            <p>Soft sponge with fragrant cream and a delicate cardamom finish.</p>
+                            <div class="product-choice"><label for="egg-rasmalai">Egg option</label><select id="egg-rasmalai" class="egg-option"><option value="100% Eggless">100% Eggless</option><option value="With Egg">With Egg</option></select></div>
+                            <div class="product-actions"><strong class="product-price">From ₹899</strong><button class="add-to-cart" data-name="Rasmalai Cake" data-price="899" data-image="rasmalai.jpg?auto=format&amp;fit=crop&amp;w=900&amp;q=80">Add to Cart</button></div>
+                        </div>
+                    </article>
+                    <article class="menu-card menu-card-enquiry">
+                        <img src="fruit.jpg" alt="Fresh fruit cake topped with berries">
+                        <div class="menu-content">
+                            <h3>Fresh Fruit <span class="diet-tag" data-veg-label="🟢 Veg" data-nonveg-label="🔴 Non-Veg">🟢 Veg</span></h3>
+                            <p>Light cream and seasonal fruit over tender vanilla sponge.</p>
+                            <div class="product-choice"><label for="egg-fruit-cake">Egg option</label><select id="egg-fruit-cake" class="egg-option"><option value="100% Eggless">100% Eggless</option><option value="With Egg">With Egg</option></select></div>
+                            <div class="product-actions"><strong class="product-price">From ₹799</strong><button class="add-to-cart" data-name="Fresh Fruit Cake" data-price="799" data-image="fruit.jpg?auto=format&amp;fit=crop&amp;w=900&amp;q=80">Add to Cart</button></div>
+                        </div>
+                    </article>
+                    <article class="menu-card menu-card-enquiry">
+                        <img src="blackforest.jpg" alt="Black Forest cake with chocolate shavings">
+                        <div class="menu-content">
+                            <h3>Black Forest <span class="diet-tag" data-veg-label="🟢 Veg" data-nonveg-label="🔴 Non-Veg">🟢 Veg</span></h3>
+                            <p>Chocolate sponge, cream, cherries, and delicate chocolate curls.</p>
+                            <div class="product-choice"><label for="egg-black-forest">Egg option</label><select id="egg-black-forest" class="egg-option"><option value="100% Eggless">100% Eggless</option><option value="With Egg">With Egg</option></select></div>
+                            <div class="product-actions"><strong class="product-price">From ₹749</strong><button class="add-to-cart" data-name="Black Forest Cake" data-price="749" data-image="blackforest.jpg?auto=format&amp;fit=crop&amp;w=900&amp;q=80">Add to Cart</button></div>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <section class="menu-category" aria-labelledby="custom-cakes-heading">
+                <div class="category-heading">
+                    <span class="tag">Designed for your day</span>
+                    <h2 id="custom-cakes-heading">Custom &amp; Theme Cakes</h2>
+                    <p>Made-to-order centrepieces shaped around your celebration.</p>
+                </div>
+                <div class="menu-grid">
+                    <article class="menu-card menu-card-enquiry">
+                        <img src="https://images.unsplash.com/photo-1535254973040-607b474cb50d?auto=format&fit=crop&w=900&q=80" alt="Elegant wedding cake">
+                        <div class="menu-content"><h3>Wedding Cakes <span class="diet-tag" data-veg-label="🟢 Veg" data-nonveg-label="🔴 Non-Veg">🟢 Veg</span></h3><p>Elegant tiers and personal details for your special day.</p><div class="product-choice"><label for="egg-wedding">Egg option</label><select id="egg-wedding" class="egg-option"><option value="100% Eggless">100% Eggless</option><option value="With Egg">With Egg</option></select></div><div class="product-actions"><strong class="product-price">From ₹2,500</strong><button class="add-to-cart" data-name="Wedding Cake" data-price="2500" data-image="https://images.unsplash.com/photo-1535254973040-607b474cb50d?auto=format&amp;fit=crop&amp;w=900&amp;q=80">Add to Cart</button></div></div>
+                    </article>
+                    <article class="menu-card menu-card-enquiry">
+                        <img src="themecake.jpg" alt="Colorful kids' theme cake">
+                        <div class="menu-content"><h3>Kids' Theme Cakes <span class="diet-tag" data-veg-label="🟢 Veg" data-nonveg-label="🔴 Non-Veg">🟢 Veg</span></h3><p>Playful custom designs made to delight little cake lovers.</p><div class="product-choice"><label for="egg-kids-cake">Egg option</label><select id="egg-kids-cake" class="egg-option"><option value="100% Eggless">100% Eggless</option><option value="With Egg">With Egg</option></select></div><div class="product-actions"><strong class="product-price">From ₹1,800</strong><button class="add-to-cart" data-name="Kids' Theme Cake" data-price="1800" data-image="themecake.jpg?auto=format&amp;fit=crop&amp;w=900&amp;q=80">Add to Cart</button></div></div>
+                    </article>
+                   <article class="menu-card menu-card-enquiry">
+                        <img src="photo.webp" alt="Custom photo cake">
+                        <div class="menu-content"><h3>Custom Photo Cakes <span class="diet-tag" data-veg-label="🟢 Veg" data-nonveg-label="🔴 Non-Veg">🟢 Veg</span></h3><p>Thoughtful special cakes to special ones.</p><div class="product-choice"><label for="egg-anniversary">Egg option</label><select id="egg-anniversary" class="egg-option"><option value="100% Eggless">100% Eggless</option><option value="With Egg">With Egg</option></select></div><div class="product-actions"><strong class="product-price">From ₹999</strong><button class="add-to-cart" data-name="Photo Cake" data-price="999" data-image="photo.webp?auto=format&amp;fit=crop&amp;w=900&amp;q=80">Add to Cart</button></div></div>
+                    </article>
+                            <article class="menu-card menu-card-enquiry">
+                        <img src="funnycake.jpg" alt="Funny cakes">
+                        <div class="menu-content"><h3>Funny Cakes <span class="diet-tag" data-veg-label="🟢 Veg" data-nonveg-label="🔴 Non-Veg">🟢 Veg</span></h3><p>Playful custom cakes to have a great laughter.</p><div class="product-choice"><label for="egg-anniversary">Egg option</label><select id="egg-anniversary" class="egg-option"><option value="100% Eggless">100% Eggless</option><option value="With Egg">With Egg</option></select></div><div class="product-actions"><strong class="product-price">From ₹2,200</strong><button class="add-to-cart" data-name="Funny Cake" data-price="2200" data-image="funnycake.jpg?auto=format&amp;fit=crop&amp;w=900&amp;q=80">Add to Cart</button></div></div>
+                    </article>
+                </div>
+            </section>
+
+            <section class="menu-category" aria-labelledby="desserts-heading">
+                <div class="category-heading">
+                    <span class="tag">Little treats</span>
+                    <h2 id="desserts-heading">Cupcakes &amp; Jar Desserts</h2>
+                    <p>Individual-sized bakes for gifting, sharing, or keeping all to yourself.</p>
+                </div>
+                <div class="menu-grid">
+                    <article class="menu-card menu-card-enquiry">
+                        <img src="redvelvet.jpg" alt="Red velvet cupcakes with cream frosting">
+                        <div class="menu-content"><h3>Red Velvet Cupcakes <span class="diet-tag" data-veg-label="🟢 Veg" data-nonveg-label="🔴 Non-Veg">🟢 Veg</span></h3><p>Velvety cocoa cakes topped with a swirl of cream cheese frosting.</p><div class="product-choice"><label for="egg-red-velvet">Egg option</label><select id="egg-red-velvet" class="egg-option"><option value="100% Eggless">100% Eggless</option><option value="With Egg">With Egg</option></select></div><div class="product-actions"><strong class="product-price">₹140</strong><button class="add-to-cart" data-name="Red Velvet Cupcakes" data-price="140" data-image="redvelvet.jpg?auto=format&amp;fit=crop&amp;w=900&amp;q=80">Add to Cart</button></div></div>
+                    </article>
+                    <article class="menu-card menu-card-enquiry">
+                        <img src="biscoffjar.jpg" alt="Layered Biscoff cheesecake jar dessert">
+                        <div class="menu-content"><h3>Biscoff Cheesecake Jars <span class="diet-tag" data-veg-label="🟢 Veg" data-nonveg-label="🔴 Non-Veg">🟢 Veg</span></h3><p>Creamy cheesecake, biscuit crumb, and a caramelised cookie finish.</p><div class="product-choice"><label for="egg-biscoff">Egg option</label><select id="egg-biscoff" class="egg-option"><option value="100% Eggless">100% Eggless</option><option value="With Egg">With Egg</option></select></div><div class="product-actions"><strong class="product-price">₹180</strong><button class="add-to-cart" data-name="Biscoff Cheesecake Jar" data-price="180" data-image="biscoffjar.jpg?auto=format&amp;fit=crop&amp;w=900&amp;q=80">Add to Cart</button></div></div>
+                    </article>
+                    <article class="menu-card">
+                        <img src="halloweencakes.jpg" alt="Halloween Cupcakes">
+                        <div class="menu-content">
+                            <h3>Halloween Cupcakes <span class="diet-tag" data-veg-label="🟢 Veg" data-nonveg-label="🔴 Non-Veg">🟢 Veg</span></h3>
+                            <p>Halloween themed cupcake sweet treats.</p>
+                            <div class="product-choice"><label for="egg-vanilla-cupcakes">Egg option</label><select id="egg-vanilla-cupcakes" class="egg-option"><option value="100% Eggless">100% Eggless</option><option value="With Egg">With Egg</option></select></div>
+                            <div class="product-actions"><strong class="product-price">₹160</strong><button class="add-to-cart" data-name="Halloween Cupcakes" data-price="160" data-image="halloweencakes.jpg?auto=format&amp;fit=crop&amp;w=900&amp;q=80">Add to Cart</button></div>
+                        </div>
+                    </article>
+                    <article class="menu-card">
+                        <img src="musechoco.jpg" alt="Chocolate cake jar topped with mousse frosting ">
+                        <div class="menu-content">
+                            <h3>Chocolate Mousse Jar <span class="diet-tag" data-veg-label="🟢 Veg" data-nonveg-label="🔴 Non-Veg">🟢 Veg</span></h3>
+                            <p>Chocolate cake jar with mousse frosting topped with grated chocolate.</p>
+                            <div class="product-choice"><label for="egg-vanilla-cupcakes">Egg option</label><select id="egg-vanilla-cupcakes" class="egg-option"><option value="100% Eggless">100% Eggless</option><option value="With Egg">With Egg</option></select></div>
+                            <div class="product-actions"><strong class="product-price">₹120</strong><button class="add-to-cart" data-name="Chocolate cake mousse jar" data-price="120" data-image="musechoco.jpg?auto=format&amp;fit=crop&amp;w=900&amp;q=80">Add to Cart</button></div>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <section class="menu-category" aria-labelledby="cookies-heading">
+                <div class="category-heading">
+                    <span class="tag">Comfort</span>
+                    <h2 id="cookies-heading">Brownies</h2>
+                    <p>Chewy, chocolatey comfort with a little something for every sweet tooth.</p>
+                </div>
+                <div class="menu-grid">
+                    <article class="menu-card">
+                        <img src="oreobrownie.jpg" alt="Chocolate chip cookies">
+                        <div class="menu-content">
+                            <h3>Oreo Brownie <span class="diet-tag" data-veg-label="🟢 Veg" data-nonveg-label="🔴 Non-Veg">🟢 Veg</span></h3>
+                            <p>Crisp oreo, Deep coca, Soft fudge loaded with chocolate chips.</p>
+                            <div class="product-choice"><label for="egg-choc-chip-cookies">Egg option</label><select id="egg-choc-chip-cookies" class="egg-option"><option value="100% Eggless">100% Eggless</option><option value="With Egg">With Egg</option></select></div>
+                            <div class="product-actions"><strong class="product-price">₹180</strong><button class="add-to-cart" data-name="Oreo Brownie" data-price="180" data-image="oreobrownie.jpg?auto=format&amp;fit=crop&amp;w=900&amp;q=80">Add to Cart</button></div>
+                        </div>
+                    </article>
+                    <article class="menu-card menu-card-enquiry">
+                        <img src="marshmellowbrownie.jpg" alt="Marshmello brownie">
+                        <div class="menu-content"><h3>Marshmello Brownie <span class="diet-tag" data-veg-label="🟢 Veg" data-nonveg-label="🔴 Non-Veg">🟢 Veg</span></h3><p>The best of both worlds: a fudgy brownie meets chewy soft marshmello.</p><div class="product-choice"><label for="egg-brookies">Egg option</label><select id="egg-brookies" class="egg-option"><option value="100% Eggless">100% Eggless</option><option value="With Egg">With Egg</option></select></div><div class="product-actions"><strong class="product-price">₹140</strong><button class="add-to-cart" data-name="Marshmello Brownie" data-price="140" data-image="marshmellowbrownie.jpg?auto=format&amp;fit=crop&amp;w=900&amp;q=80">Add to Cart</button></div></div>
+                    </article>
+                    <article class="menu-card menu-card-enquiry">
+                        <img src="walnutbrownie.jpg" alt="Walnut fudge brownies">
+                        <div class="menu-content"><h3>Walnut Fudge Brownies <span class="diet-tag" data-veg-label="🟢 Veg" data-nonveg-label="🔴 Non-Veg">🟢 Veg</span></h3><p>Deep cocoa, a fudgy centre, and a satisfying crunch of walnuts.</p><div class="product-choice"><label for="egg-walnut-brownie">Egg option</label><select id="egg-walnut-brownie" class="egg-option"><option value="100% Eggless">100% Eggless</option><option value="With Egg">With Egg</option></select></div><div class="product-actions"><strong class="product-price">₹150</strong><button class="add-to-cart" data-name="Walnut Fudge Brownies" data-price="150" data-image="walnutbrownie.jpg?auto=format&amp;fit=crop&amp;w=900&amp;q=80">Add to Cart</button></div></div>
+                    </article>
+                    <article class="menu-card menu-card-enquiry">
+                        <img src="saltedbrownie.jpg" alt="Walnut fudge brownies">
+                        <div class="menu-content"><h3>Salted Caremal Fudge Brownies <span class="diet-tag" data-veg-label="🟢 Veg" data-nonveg-label="🔴 Non-Veg">🟢 Veg</span></h3><p>A fudgy centre with dripping salted caramel .</p><div class="product-choice"><label for="egg-walnut-brownie">Egg option</label><select id="egg-walnut-brownie" class="egg-option"><option value="100% Eggless">100% Eggless</option><option value="With Egg">With Egg</option></select></div><div class="product-actions"><strong class="product-price">₹150</strong><button class="add-to-cart" data-name="Salted Caramel Brownies" data-price="150" data-image="saltedbrownie.jpg?auto=format&amp;fit=crop&amp;w=900&amp;q=80">Add to Cart</button></div></div>
+                    </article>
+                    
+                </div>
+            </section>
+
+            <section class="menu-category" aria-labelledby="bread-heading">
+                <div class="category-heading">
+                    <span class="tag">Baked fresh each morning</span>
+                    <h2 id="bread-heading">Fresh Breads</h2>
+                    <p>Slow-made loaves and savoury breads, warm from our oven.</p>
+                </div>
+                <div class="menu-grid">
+                    <article class="menu-card menu-card-enquiry">
+                        <img src="seeds.jpg" alt="Multigrain loaf">
+                        <div class="menu-content"><h3>Multigrain Loaf <span class="diet-tag">🟢 Veg</span></h3><p>A hearty everyday loaf with a tender crumb and toasted grains.</p><span class="eggless-label">100% Eggless</span><div class="product-actions"><strong class="product-price">₹180</strong><button class="add-to-cart" data-name="Multigrain Loaf" data-price="180" data-image="seeds.jpg?auto=format&amp;fit=crop&amp;w=900&amp;q=80">Add to Cart</button></div></div>
+                    </article>
+                    <article class="menu-card menu-card-enquiry">
+                        <img src="ladipav.jpg" alt="Soft ladi pav rolls">
+                        <div class="menu-content"><h3>Ladi Pav <span class="diet-tag">🟢 Veg</span></h3><p>Soft, pillowy rolls baked fresh for your favourite meals.</p><span class="eggless-label">100% Eggless</span><div class="product-actions"><strong class="product-price">₹60</strong><button class="add-to-cart" data-name="Ladi Pav" data-price="60" data-image="ladipav.jpg?auto=format&amp;fit=crop&amp;w=900&amp;q=80">Add to Cart</button></div></div>
+                    </article>
+                    <article class="menu-card menu-card-enquiry">
+                        <img src="garlic.jpg" alt="Garlic focaccia bread">
+                        <div class="menu-content"><h3>Garlic Focaccia <span class="diet-tag">🟢 Veg</span></h3><p>Olive-oil-rich bread finished with fragrant garlic and herbs.</p><span class="eggless-label">100% Eggless</span><div class="product-actions"><strong class="product-price">₹220</strong><button class="add-to-cart" data-name="Garlic Focaccia" data-price="220" data-image="garlic.jpg?auto=format&amp;fit=crop&amp;w=900&amp;q=80">Add to Cart</button></div></div>
+                    </article>
+                    <article class="menu-card">
+                        <img src="artisan.jpg" alt="Fresh artisan bread loaf">
+                        <div class="menu-content">
+                            <h3>Artisan Bread <span class="diet-tag">🟢 Veg</span></h3>
+                            <p>Slow-fermented loaf with a crisp crust and soft crumb.</p>
+                            <span class="eggless-label">100% Eggless</span>
+                            <div class="product-actions"><strong class="product-price">₹260</strong><button class="add-to-cart" data-name="Artisan Bread" data-price="260" data-image="artisan.jpg?auto=format&amp;fit=crop&amp;w=900&amp;q=80">Add to Cart</button></div>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <section class="menu-category" aria-labelledby="savoury-heading">
+                <div class="category-heading">
+                    <span class="tag">A savoury little break</span>
+                    <h2 id="savoury-heading">Savory Bakes &amp; Patties</h2>
+                    <p>Warm, flaky favourites for teatime or an anytime snack.</p>
+                </div>
+                <div class="menu-grid">
+                    <article class="menu-card menu-card-enquiry">
+                        <img src="paneerpattie.jpg" alt="Paneer tikka puff pastry">
+                        <div class="menu-content"><h3>Paneer Tikka Puff <span class="diet-tag" data-veg-label="🟢 Veg" data-nonveg-label="🔴 Non-Veg">🟢 Veg</span></h3><p>Flaky pastry wrapped around a warmly spiced paneer filling.</p><div class="product-choice"><label for="egg-paneer-puff">Egg option</label><select id="egg-paneer-puff" class="egg-option"><option value="100% Eggless">100% Eggless</option><option value="With Egg">With Egg</option></select></div><div class="product-actions"><strong class="product-price">₹80</strong><button class="add-to-cart" data-name="Paneer Tikka Puff" data-price="80" data-image="paneerpattie.jpg?auto=format&amp;fit=crop&amp;w=900&amp;q=80">Add to Cart</button></div></div>
+                    </article>
+                    <article class="menu-card menu-card-enquiry">
+                        <img src="swirls.jpg" alt="Golden vegetable swirls">
+                        <div class="menu-content"><h3>Veg Swirls <span class="diet-tag" data-veg-label="🟢 Veg" data-nonveg-label="🔴 Non-Veg">🟢 Veg</span></h3><p>Golden, crisp swirls filled with a comforting seasonal vegetable mix.</p><div class="product-choice"><label for="egg-veg-patty">Egg option</label><select id="egg-veg-patty" class="egg-option"><option value="100% Eggless">100% Eggless</option><option value="With Egg">With Egg</option></select></div><div class="product-actions"><strong class="product-price">₹60</strong><button class="add-to-cart" data-name="Swirls" data-price="60" data-image="swirls.jpg?auto=format&amp;fit=crop&amp;w=900&amp;q=80">Add to Cart</button></div></div>
+                    </article>
+                    <article class="menu-card menu-card-enquiry">
+                        <img src="cheesetoast.jpg" alt="Cheese croissants">
+                        <div class="menu-content"><h3>Cheese Croissants <span class="diet-tag" data-veg-label="🟢 Veg" data-nonveg-label="🔴 Non-Veg">🟢 Veg</span></h3><p>Buttery, flaky layers with a savoury cheese filling.</p><div class="product-choice"><label for="egg-cheese-croissant">Egg option</label><select id="egg-cheese-croissant" class="egg-option"><option value="100% Eggless">100% Eggless</option><option value="With Egg">With Egg</option></select></div><div class="product-actions"><strong class="product-price">₹140</strong><button class="add-to-cart" data-name="Cheese Croissants" data-price="140" data-image="cheesetoast.jpg?auto=format&amp;fit=crop&amp;w=900&amp;q=80">Add to Cart</button></div></div>
+                    </article>
+                    <article class="menu-card">
+                        <img src="avocadotoast.jpg" alt="Avocado croissant with flaky layers">
+                        <div class="menu-content">
+                            <h3>Avocado Croissant <span class="diet-tag" data-veg-label="🟢 Veg" data-nonveg-label="🔴 Non-Veg">🟢 Veg</span></h3>
+                            <p>Golden, flaky layers with a rich buttery finish.</p>
+                            <div class="product-choice"><label for="egg-butter-croissant">Egg option</label><select id="egg-butter-croissant" class="egg-option"><option value="100% Eggless">100% Eggless</option><option value="With Egg">With Egg</option></select></div>
+                            <div class="product-actions"><strong class="product-price">₹110</strong><button class="add-to-cart" data-name="Avocado Croissant" data-price="110" data-image="avocadotoast.jpg?auto=format&amp;fit=crop&amp;w=900&amp;q=80">Add to Cart</button></div>
+                        </div>
+                    </article>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 Sweet Crumbs Bakery | Online Bakery Ordering System</p>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+    <script src="account.js"></script>
+</body>
+</html>
